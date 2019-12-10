@@ -40,6 +40,34 @@ public class Job {
     //  and id.
 
 
+    public String toString() {
+
+if (name == "") {
+    name = "Data not available"; }
+
+if (employer.toString() == "") {
+    employer.setValue("Data not available");}
+
+if (location.toString() == "") {
+    location.setValue("Data not available");}
+
+if (positionType.toString() == "") {
+    positionType.setValue("Data not available");}
+
+if (coreCompetency.toString() == "") {
+    coreCompetency.setValue("Data not available");}
+
+        return "\n" +
+                "ID: " + id + "\n" +
+                "Name: " + name + "\n" +
+                "Employer: " + employer + "\n" +
+                "Location: " + location + "\n" +
+                "Position Type: " + positionType + "\n" +
+                "Core Competency: " + coreCompetency + "\n";
+    }
+
+
+
     public String getName() {
         return name;
     }
